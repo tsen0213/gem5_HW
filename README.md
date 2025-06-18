@@ -1,5 +1,45 @@
 # gem5_HW
-檔案都在branch master裡\n
-gem5_result 中有q3、q4、q5的結果\n
-gem5-525ce650e1a5bbe71c39d4b15598d6c003cc9f9e中Caches.py的l3cache有加入LFU replacement，不要可以註解掉\n
-gem5-525ce650e1a5bbe71c39d4b15598d6c003cc9f9e中base.cc大概在1070附近有write through改變，不要可以註解掉，但我記得他註解掉了，所以現在是write back
+
+---
+
+## 檔案
+
+- 所有檔案目前皆位於 `master` 分支。
+
+---
+
+## 結果
+
+`gem5_result` 資料夾中包含以下模擬結果：
+
+- `m5out_2way` 、 `m5out_fullway` - 問題三的模擬結果
+- `m5out_LRU`、`m5out_LFU` - 問題四的模擬結果
+- `m5out_wb`、`m5out_wt` - 問題五的模擬結果
+
+---
+
+## gem5 修改紀錄
+
+### 1. L3 Cache Replacement
+
+- 所在檔案：  
+  `Caches.py`
+
+- 修改內容：
+  - 為 L3 Cache 新增 **LFU replacement policy**
+  - 若不使用可註解掉
+
+---
+
+### 2. Write Policy切換
+
+- 所在檔案：  
+  `base.cc`  
+  修改位置約在第 **1070 行附近**。
+
+- 修改內容：
+  - 增加 Write-Through。
+  - **目前應為 Write-Back 模式**（Write-Through 已註解）。
+
+  > 如需啟用 Write-Through，可取消註解。
+
