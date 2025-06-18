@@ -80,7 +80,6 @@ class L3Cache(Cache):
     mshrs = 20
     tgts_per_mshr = 12
     write_buffers = 8
-    #LFU replacement policy
     replacement_policy = Param.BaseReplacementPolicy(LFURP(), "Replacement policy")
 
 class IOCache(Cache):

@@ -2,9 +2,9 @@ melody@coad:~/gem5-525ce650e1a5bbe71c39d4b15598d6c003cc9f9e$ ./build/X86/gem5.op
 gem5 Simulator System.  http://gem5.org
 gem5 is copyrighted software; use the --copyright option for details.
 
-gem5 compiled Jun 17 2025 22:11:35
-gem5 started Jun 17 2025 22:58:11
-gem5 executing on coad, pid 2825
+gem5 compiled Jun 18 2025 23:12:46
+gem5 started Jun 18 2025 23:53:54
+gem5 executing on coad, pid 4034
 command line: ./build/X86/gem5.opt configs/example/se.py -c tests/test-progs/hello/bin/x86/linux/hello --cpu-type=TimingSimpleCPU --caches --l2cache --l3cache --mem-type=NVMainMemory --nvmain-config=../NVmain/Config/PCM_ISSCC_2012_4GB.config
 
 Global frequency set at 1000000000000 ticks per second
