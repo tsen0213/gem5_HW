@@ -13,7 +13,7 @@
 `gem5_result` 資料夾中包含以下模擬結果：
 
 - `m5out_2way` 、 `m5out_fullway` - 問題三的模擬結果
-- `m5out_LRU`、`m5out_LFU` - 問題四的模擬結果
+- `m5out_LRU`、`m5out_FBR` - 問題四的模擬結果
 - `m5out_wb`、`m5out_wt` - 問題五的模擬結果
 
 ---
@@ -31,7 +31,17 @@
 
 ---
 
-### 2. Write Policy切換
+### 2. Replacement Policy
+
+- 所在檔案：  
+  `lfu_rp.cc`、`lfu_rp.hh`
+
+- 修改內容：
+  - 雖然他叫lfu_rp，但我把內容改成FBR了
+
+---
+
+### 3. Write Policy切換
 
 - 所在檔案：  
   `base.cc`  
