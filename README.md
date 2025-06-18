@@ -1,3 +1,5 @@
 # gem5_HW
-檔案都在branch master裡
-gem5_result 中有q3、q4、q5的結果
+檔案都在branch master裡\n
+gem5_result 中有q3、q4、q5的結果\n
+gem5-525ce650e1a5bbe71c39d4b15598d6c003cc9f9e中Caches.py的l3cache有加入LFU replacement，不要可以註解掉\n
+gem5-525ce650e1a5bbe71c39d4b15598d6c003cc9f9e中base.cc大概在1070附近有write through改變，不要可以註解掉，但我記得他註解掉了，所以現在是write back
