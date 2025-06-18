@@ -26,7 +26,7 @@
   `Caches.py`
 
 - 修改內容：
-  - 為 L3 Cache 新增 **LFU replacement policy**
+  - 為 L3 Cache 新增 **FBR replacement policy**，但他會顯示叫LFU
   - 若不使用可註解掉
 
 ---
