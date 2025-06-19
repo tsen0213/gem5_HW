@@ -48,7 +48,7 @@ from m5.objects import *
 from Caches import *
 
 def create_l3_cache(clk_domain, size, assoc_type='8'):
-    cache_size_bytes = int(size[:-2]) * 1024 * 1024
+    cache_size_bytes = int(size[:-2]) * 1024
     line_size = 64
     try:
    	if int(assoc_type):

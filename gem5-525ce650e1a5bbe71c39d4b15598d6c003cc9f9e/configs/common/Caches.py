@@ -65,22 +65,22 @@ class L1_DCache(L1Cache):
 
 class L2Cache(Cache):
     assoc = 8
-    tag_latency = 20
-    data_latency = 20
-    response_latency = 20
+    tag_latency = 4 
+    data_latency = 4
+    response_latency = 4
     mshrs = 20
-    tgts_per_mshr = 12
-    write_buffers = 8
+    tgts_per_mshr = 16
+    write_buffers = 16
 
 class L3Cache(Cache):
     assoc = 8
-    tag_latency = 20
-    data_latency = 20
-    response_latency = 20
-    mshrs = 20
-    tgts_per_mshr = 12
-    write_buffers = 8
-    replacement_policy = Param.BaseReplacementPolicy(LFURP(), "Replacement policy")
+    tag_latency = 10
+    data_latency = 10
+    response_latency = 10
+    mshrs = 32
+    tgts_per_mshr = 16
+    write_buffers = 32
+    #replacement_policy = Param.BaseReplacementPolicy(LFURP(), "Replacement policy")
 
 class IOCache(Cache):
     assoc = 8
