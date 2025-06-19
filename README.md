@@ -58,3 +58,15 @@
 
 - 修改demo的問題
 
+---
+### 5. 總共修改檔案
+
+- Options.py
+- Caches.py
+- Xbar.py
+- BaseCPU.py
+- CacheConfig.py
+- base.cc
+- lfu_rp.cc
+- lfu_rp.hh
+
